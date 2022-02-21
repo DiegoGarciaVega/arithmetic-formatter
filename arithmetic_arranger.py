@@ -3,9 +3,7 @@ def arithmetic_arranger(problems, *boolean):
     calculate = True
   else:
     calculate = False
-#  if len(problems) == 2 and isinstance(problems[1],bool):
-#    calculate = problems.pop(1)
-#    problems = problems[0]
+
   if len(problems) > 5:
     return "Error: Too many problems."
   line1 = ''
