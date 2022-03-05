@@ -36,6 +36,8 @@ def arithmetic_arranger(problems, *boolean):
        result = int(op[0]) - int(op[2])
       result = str(result)
       line4 += " " * (aux + 2 - len(result)) + result + " " * 4
-    
-  arranged_problems = line1[:-4] + '\n' + line2[:-4] + '\n' + line3[:-4] + '\n' + line4[:-4] 
+  if calculate:
+    arranged_problems = line1[:-4] + '\n' + line2[:-4] + '\n' + line3[:-4] + '\n' + line4[:-4]
+  else:
+    arranged_problems = line1[:-4] + '\n' + line2[:-4] + '\n' + line3[:-4]
   return arranged_problems
